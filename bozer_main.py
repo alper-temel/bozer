@@ -4,9 +4,9 @@ import streamlit as st
 from io import BytesIO
 from pyxlsb import open_workbook as open_xlsb
 
-st.markdown("# :violet[SATIŞ KANALLARI BİRLEŞTİRME] 	:car: :hocho: :cake:")
+st.markdown("# :violet[SATIŞ KANALLARI BİRLEŞTİRME] 	chart_with_upwards_trend: :alien: money_with_wings")
 
-bozer = st.file_uploader("**Kullanım Tarzı Dosyasını Yükleyin** ", type = ["xls", "xlsx", "csv"])
+bozer = st.file_uploader("**Dosya Yükleyin** ", type = ["xls", "xlsx", "csv"])
 if bozer is not None:
      st.dataframe(pd.read_excel(bozer))
 else:
