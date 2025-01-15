@@ -19,7 +19,12 @@ def burc():
          bozer_2 = pd.read_excel(bozer, header = 5, sheet_name = "Tele-Satış")
          bozer_3 = pd.read_excel(bozer, header = 5, sheet_name = "Geleneksel")
 
+         bozer_1["Satış Kanalı"] = "E-Ticaret"
+         bozer_2["Satış Kanalı"] = "Tele-Satış"
+         bozer_2["Satış Kanalı"] = "Geleneksel"
+
          data = pd.concat([bozer_1, bozer_2, bozer_3], axis = 0)
+         data = data.dropna()
     return data
 
 if bozer is not None:
