@@ -1,34 +1,12 @@
 import pandas as pd
-import numpy as np
 import streamlit as st
 from io import BytesIO
 from pyxlsb import open_workbook as open_xlsb
 
-st.markdown("""
-                <style>
-                    .css-h5rgaw.egzxvld1
-                {
-                    visibility: hidden;
-                }
-                </style>
-            """, 
-            unsafe_allow_html = True)
-
-st.markdown("""
-                <style>
-                    .css-cio0dv.egzxvld1
-                {
-                    visibility: hidden;
-                }
-                </style>
-            """, 
-            unsafe_allow_html = True)
-
-
 st.markdown("# :violet[SATIŞ KANALLARI BİRLEŞTİRME] 	:car: :hocho: :cake:")
 
 bozer = st.file_uploader("**Kullanım Tarzı Dosyasını Yükleyin** ", type = ["xls", "xlsx", "csv"])
-if kullanim_tarzi is not None:
+if bozer is not None:
      st.dataframe(pd.read_excel(bozer))
 else:
     st.caption("Lütfen Excel Dosyasını Kontrol Edin")
