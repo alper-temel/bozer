@@ -21,7 +21,7 @@ def burc():
 
          bozer_1["Satış Kanalı"] = "E-Ticaret"
          bozer_2["Satış Kanalı"] = "Tele-Satış"
-         bozer_2["Satış Kanalı"] = "Geleneksel"
+         bozer_3["Satış Kanalı"] = "Geleneksel"
 
          data = pd.concat([bozer_1, bozer_2, bozer_3], axis = 0)
          #data = data.dropna()
