@@ -24,7 +24,7 @@ def burc():
          bozer_2["Satış Kanalı"] = "Geleneksel"
 
          data = pd.concat([bozer_1, bozer_2, bozer_3], axis = 0)
-         data = data.dropna()
+         #data = data.dropna()
     return data
 
 if bozer is not None:
